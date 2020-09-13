@@ -8,6 +8,10 @@ class TodosContainer extends Component {
       <Todo delete={this.props.delete} key={todo.id} todo={todo} />
     ));
   };
+
+  render() {
+    return <div>{this.renderTodos()}</div>;
+  }
 }
 
 const mapStateToProps = (state) => {
